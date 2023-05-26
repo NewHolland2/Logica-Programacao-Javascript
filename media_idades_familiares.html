@@ -1,0 +1,31 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var totalFamiliares = parseInt(prompt("Quantidade de familiares: "));
+
+    var numero = 1;
+
+    var totalIdade = 0;
+
+    while (numero <= totalFamiliares) {
+        var idade = parseInt(prompt("Informe a idade de seu familiares: "));
+        totalIdade = totalIdade + idade;
+        numero++;
+    }
+
+    var mediaDasIdades = totalIdade = totalIdade / totalFamiliares;
+
+    mostra("A média das idade de seus famíliares são: ");
+    mostra("FIM");
+
+    // Daria para fazer média de sálarios de funcíonarios, cálcular média de rentabilidade das empresas, e fazer média de quanto dióxido de carbono está jorrando na atmosfera!
+
+</script>

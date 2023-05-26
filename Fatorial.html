@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+    
+    var numero = parseInt(prompt("Digite um número:"));
+    var fatorial = 1;
+
+    for (var i = 1; i <= numero; i++) {
+        fatorial *= i;
+    }
+
+    mostra("O fatorial de " + numero + " é: " + fatorial);
+</script>

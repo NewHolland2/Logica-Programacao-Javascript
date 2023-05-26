@@ -1,0 +1,27 @@
+<meta charset="UTF-8">
+
+<script>
+    function PulaLinha(){
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+   
+    var C = parseInt(prompt("Qual a temperatura? "));
+    
+    function celsiusEmFahrenheit() {
+        var fahrenheit = (C * 9 / 5) + 32;
+        return fahrenheit;
+    }
+
+    var temperaturaCelsius = C;
+    var temperaturaFahrenheit = celsiusEmFahrenheit(temperaturaCelsius);
+
+    mostra(temperaturaCelsius + " graus celsius é igual a " + temperaturaFahrenheit + " graus fahrenheit!");
+
+
+</script>

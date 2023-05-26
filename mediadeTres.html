@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+
+<script>
+    function mostra(frase) {
+        document.write(frase);
+    }
+
+    var numero1 = parseFloat(prompt("Digite o primeiro número da média: "));
+    var numero2 = parseFloat(prompt("Digite o segundo número da média: "));
+    var numero3 = parseFloat(prompt("Digite o terceiro número da média: "));
+
+    var resultado = (numero1 + numero2 + numero3) / 3;
+
+    var presisao = 2;
+
+    var fator = Math.pow(10, presisao);
+    var numeroArredondado = Math.floor(resultado * fator) / fator;
+
+    mostra("Fazendo a média desses números equivale há: " + numeroArredondado);
+
+</script>

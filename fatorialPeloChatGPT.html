@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+
+<script>
+        var numero = parseInt(prompt("Digite um número:"));
+
+    function calcularFatorial(num) {
+        if (num === 0 || num === 1) {
+            return 1;
+        } else {
+            return num * calcularFatorial(num - 1);
+        }
+    }
+
+    var fatorial = calcularFatorial(numero);
+    document.write("O fatorial de " + numero + " é: " + fatorial);
+
+</script>

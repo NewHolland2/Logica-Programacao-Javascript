@@ -1,0 +1,22 @@
+<meta charset="UTF-8">
+
+<script>
+    function pulaLinha() {
+        document.write("<br>")
+    }
+    
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var digite = parseInt(prompt("Digite um número para a tabuada: "));
+    var numero = 0;
+
+    while (numero <= 10) {
+        document.write(digite + " X ");
+        document.write(numero + " = ");
+        mostra(digite * numero);
+        numero++;
+    }
+</script>
